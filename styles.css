@@ -3,12 +3,19 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none; color: black;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
 
-.botao__telainicial__top {
+nav {
     margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
 }
 
 main {
@@ -20,6 +27,35 @@ main {
     text-align: center;
 }
 
+label, button, input {
+    display: block;
+    margin-bottom: 1em;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1em;
+    width: 100%;
+    max-width: 400px;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.divider h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+
+
 .botao__login__email {
     width: 400px;
     height: 40px;
@@ -27,7 +63,7 @@ main {
     background-color: #000000;
     border-radius: 8px;
     font-size: 16px;
-    font-style: normal;
+    border: none;
 }
 
 .botao__login__google {
@@ -35,31 +71,24 @@ main {
     height: 40px;
     border-radius: 8px;
     background-color: #EEEEEE;
-    font-size: 16px;
+
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    color: black;
-    box-sizing:border-box;
-    padding-left: 20px;
-    padding-right: 170px;
-}
 
-h1 {
-    font-size: 24px;
-    font-style: Semi Bold;
-}
-
-h4 {
-    color: #000000;
+    padding: 0 16px;
     font-size: 16px;
 }
 
-.paragrafo__grey {
-    display: flexbox;
-    color:#828282;
-    font-size: 16px;
+.logo__google {
+    width: 20px;
+    height: 20px;
 }
+
+.texto__google {
+    flex: 1;              
+    text-align: center;   
+}
+
 
 input[type="email"] {
     width: 400px;
@@ -69,7 +98,12 @@ input[type="email"] {
     border-radius: 8px;
 }
 
-.conteudo__login__paragrafos {
-    font-size: 16px;
-    font-style: Regular;
+footer {
+    margin-top: 24px;
+    font-size: 12px;
+    color: #828282;
+}
+
+span {
+    font-weight: bold;
 }
