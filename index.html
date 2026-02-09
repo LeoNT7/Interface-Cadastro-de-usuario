@@ -7,27 +7,39 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <h2 class="botao__telainicial__top"><strong>App</strong></h2>
+    <nav>
+        <h2><strong>App</strong></h2>
+    </nav>
     <main>
-        <h1><strong>Create an account</strong></h1>
-        <br>
-        <div class="conteudo__login__paragrafos">
-            <h4>Enter your email to sing up for this app</h4>
-            <br>
-            <form action="https://example.com/form-handler" method="post">
-                <label for="email"></label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-                <input class="botao__login__email" type="submit" value="Sign up with email">
-            </form>
+        <h1>Create an account</h1>
+
+        <form action="/signup" method="post">
+            <label for="userEmail">Enter your email to sign up for this app</label>
+            <input type="email" id="userEmail" name="email" required>
+
+            <button class="botao__login__email" type="submit">Sign up with email</button>
+        </form>
+
+        <div class="divider">
+            <hr>
+            <h4>or continue with</h4>
+            <hr>
         </div>
-        <br>
-        <h4>or continue with</h4>
-        <br>
-        <a class="botao__login__google" href="https://myaccount.google.com">
-        <img class="logo__google" src="Imagens PNG/Google.png" alt="Logo do Google" width="20"><strong>Google</strong></a>
-        <br>
-        <p class="paragrafo__grey"> By clicking continue, you agree to our <span><a style=color:#000000 href="https://policies.google.com/terms">Terms Of <br> Service</a></span> and <a href="https://policies.google.com/privacy">Privacy Policy</a></p>
+        
+        <a class="botao__login__google" href="https://myaccount.google.com" role="button">
+            <img class="logo__google" src="Imagens PNG/Google.png" alt="Logo Google" width="20">
+            <span class="texto__google">Google</span>
+        </a>
+
+        <footer>
+           <small> By clicking continue, you agree to our 
+            <span>
+                <a style=color:#000000 href="https://policies.google.com/terms">Terms Of <br> Service</a>
+            </span> and 
+            <a href="https://policies.google.com/privacy">Privacy Policy</a>
+            </small>
+        </footer>
     </main>
-    </body>
+</body>
+    
 </html>
